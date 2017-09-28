@@ -1,0 +1,30 @@
+
+<!doctype html>
+<meta charset="utf-8">
+<body>
+
+<img style="width: 600px; 
+			position: absolute;
+    		left: 85px;
+    		top: 150px;" 
+      src="tem.png">
+
+<div id= "myRect" 
+	 style="width: 10px; 
+	 		height: 30px;
+	 		background: red; 
+	 		position: absolute;
+      		left: 150px;
+    		top: 216px;
+    		transition: all 1s;">
+    			
+ </div> 
+0<input type="range" id="myPicker" min="50" max="500" >500
+<div id = "rangeValue"></div>
+	<script>
+		myPicker.onchange = function(){
+			myRect.style.width = myPicker.value + "px";
+			rangeValue.innerHTML = myPicker.value;
+} 
+	</script>
+</body>
